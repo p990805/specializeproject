@@ -30,11 +30,19 @@ const DiaryDetail = () => {
       <MainPage />
       <div className="absolute inset-0 backdrop-blur-sm"></div>
       {/* 모달 배경 시작 */}
+<<<<<<< HEAD
       <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 transform w-[45%] h-[87%] modal-back-color p-1 z-50">
         {/* 모달 내용을 전체 감싸는 div태그 시작 */}
         <div className="w-full h-full py-7 px-3 pl-7 overflow-y-scroll custom-scrollbar">
           <div className=" pr-3 flex flex-col gap-3">
             <div className="">
+=======
+      <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 transform w-[45%] h-[87%] modal-back-color p-1">
+        {/* 모달 내용을 전체 감싸는 div태그 시작 */}
+        <div className="w-full h-full py-7 px-3 pl-7 overflow-y-scroll custom-scrollbar">
+          <div className=" pr-3 flex flex-col gap-3">
+            <div className="border border-white">
+>>>>>>> 602481ed053ed7737e7c24ee783b9fbceeadb072
               <DetailHeader
                 title={diarydata.title}
                 created_at={diarydata.created_at}
@@ -42,11 +50,16 @@ const DiaryDetail = () => {
             </div>
 
             {flag && (
+<<<<<<< HEAD
               <div className="">
+=======
+              <div className="border border-white">
+>>>>>>> 602481ed053ed7737e7c24ee783b9fbceeadb072
                 <DetailVideo dream_video={diarydata.dream_video} />
               </div>
             )}
 
+<<<<<<< HEAD
             <div className=" overflow-y-auto custom-scrollbar whitespace-normal break-words">
               <DetailContent content={diarydata.content} />
             </div>
@@ -56,13 +69,28 @@ const DiaryDetail = () => {
             </div>
 
             <div className=" h-10 flex items-center justify-end">
+=======
+            <div className="border border-white overflow-y-auto custom-scrollbar whitespace-normal break-words">
+              <DetailContent content={diarydata.content} />
+            </div>
+
+            <div className="border border-white">
+              <DetailTags tags={diarydata.tags} />
+            </div>
+
+            <div className="border border-white h-10 flex items-center justify-end">
+>>>>>>> 602481ed053ed7737e7c24ee783b9fbceeadb072
               <DetailLike
                 likes={diarydata.likes}
                 likes_boolean={diarydata.likes_boolean}
               />
             </div>
 
+<<<<<<< HEAD
             <div className="">
+=======
+            <div className="border border-white">
+>>>>>>> 602481ed053ed7737e7c24ee783b9fbceeadb072
               <DetailButtons />
             </div>
           </div>
