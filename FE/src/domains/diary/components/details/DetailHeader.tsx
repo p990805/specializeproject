@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React from 'react';
-=======
-import LockToggle from '@/common/LockToggle';
->>>>>>> 602481ed053ed7737e7c24ee783b9fbceeadb072
 import '../../styles/DetailHeader.css';
 
 interface DetailHeaderProps {
@@ -12,7 +8,6 @@ interface DetailHeaderProps {
 
 const DetailHeader: React.FC<DetailHeaderProps> = ({ title, created_at }) => {
   return (
-<<<<<<< HEAD
     <div className="flex flex-nowrap w-full items-center justify-between">
       
       <div className="flex flex-col">
@@ -36,16 +31,6 @@ const DetailHeader: React.FC<DetailHeaderProps> = ({ title, created_at }) => {
         </div>
       </div>
       
-=======
-    <div className="flex w-full">
-      <div className="flex flex-col">
-        <h1 className="text-white text-2xl">{title}</h1>
-        <p className="text-[rgb(255,255,255,0.7)] ">{created_at}</p>
-      </div>
-      <div>
-        <LockToggle />
-      </div>
->>>>>>> 602481ed053ed7737e7c24ee783b9fbceeadb072
     </div>
   );
 };

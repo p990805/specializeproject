@@ -13,13 +13,8 @@ const LockToggle = () => {
           className="btn-lock"
           htmlFor="inpLock">
           <svg
-<<<<<<< HEAD
             width={30}
             height={34}
-=======
-            width={36}
-            height={40}
->>>>>>> 602481ed053ed7737e7c24ee783b9fbceeadb072
             viewBox="0 0 36 40">
             <path
               className="lockb"
