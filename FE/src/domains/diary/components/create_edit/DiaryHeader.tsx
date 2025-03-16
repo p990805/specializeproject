@@ -2,15 +2,18 @@ import React from 'react'
 import Today from './Today'
 import { IoClose } from 'react-icons/io5';
 
-interface DiaryProps {
+interface DiaryHeaderProps {
   onClose: () => void;
+  isEditing?: boolean; // 수정 모드 여부 추가
 }
 
-const DiaryHeader:React.FC<DiaryProps> = ({onClose}) => {
+const DiaryHeader: React.FC<DiaryHeaderProps> = ({ onClose, isEditing = false }) => {
   return (
     <div className="flex justify-between relative">
         <div className="flex flex-col">
-            <h1 className="text-2xl font-semibold text-white">오늘은 무슨 꿈을 꾸었나요?</h1>
+            <h1 className="text-2xl font-semibold text-white">
+              {isEditing ? '꿈 일기를 수정해보세요' : '오늘은 무슨 꿈을 꾸었나요?'}
+            </h1>
             <Today />
         </div>
 

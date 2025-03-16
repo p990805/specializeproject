@@ -8,10 +8,7 @@ const MainPage = lazy(() => import('../domains/mainpage/pages/MainPage'));
 const Login = lazy(() => import('../domains/login/pages/Login'));
 const Signup = lazy(() => import('../domains/signup/pages/Signup'));
 const GuestBook = lazy(() => import('../domains/guestbook/GuestBook'));
-<<<<<<< HEAD
 const DiaryComponent = lazy(() => import('../domains/diary/modals/DiaryComponent'));
-=======
->>>>>>> 602481ed053ed7737e7c24ee783b9fbceeadb072
 const DiaryDetail = lazy(() => import('../domains/diary/modals/DiaryDetail'));
 const SpaceShip = lazy(() => import('../domains/spaceship/pages/SpaceShip'));
 const PasswordCheck = lazy(
@@ -63,15 +60,15 @@ const AppRouter = () => {
             element={<DreamSolve />}
           />
           <Route
-            path="/test"
-<<<<<<< HEAD
+            path="/diary/create"
             element={<DiaryComponent />}
-=======
-            element={<GuestBook />}
->>>>>>> 602481ed053ed7737e7c24ee783b9fbceeadb072
           />
           <Route
-            path="/test2"
+            path="/diary/edit/:id"
+            element={<DiaryComponent isEditing={true} />}
+          />
+          <Route
+            path="/diary/:id"
             element={<DiaryDetail />}
           />
         </Route>
